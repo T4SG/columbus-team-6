@@ -1,1 +1,11 @@
-This is calender page
+<div class="container">
+  <form class="form-signin">
+    <h3 class="form-signin-heading">Please Sign In</h2>
+    <%= form_for(@user, :url => root_path) do |f| %>
+        <%= f.email_field :email, :class => 'form-control', :autofocus => true, placeholder: "Email address" %>
+        <%= f.password_field :password, :class => 'form-control', placeholder: "Password" %>
+      <br/>
+      <%= f.submit "Save", class: 'btn btn-lg btn-block btn-primary' %>
+    <% end %>
+  </form>
+</div>
