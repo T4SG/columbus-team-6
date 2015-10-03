@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
 	resources 'points_locker'
 
+	resources "reporting"
+
+	resources "admin"
+
 
 
 
