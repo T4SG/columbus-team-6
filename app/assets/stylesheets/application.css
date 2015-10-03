@@ -16,29 +16,15 @@
 
 body {
 	padding-top: 70px;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #E9E9E9;
+    margin: 0;
+    color: #7C7C7C;
+    font-weight: normal;
+    font-style: normal;
+    min-width: 1190px;
 }
-
-/* 
-.navbar {
-    background-color: #fcb040;
-    border-color: #3e3e3e;
-
-}
-
-.navbar .navbar-brand {
-    color: #056839;
-}
-.navbar .navbar-brand:hover,
-.navbar.navbar-brand:focus {
-    color: #3e3e3e;
-}
-*/
-
-
-
-
-
-
 
 .navbar {
   background-color: #fcb040;
