@@ -1,0 +1,2 @@
+module PointsLockerHelper
+end
