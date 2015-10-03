@@ -32,6 +32,13 @@ body {
     min-width: 1190px;
 }
 
+.style_image {
+	position:absolute;
+	top: 20px;
+	left: 25px;
+	z-index: 2;
+}
+
 .navbar {
   background-color: #fcb040;
   border-color: #fcb040;
