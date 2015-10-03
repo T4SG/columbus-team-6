@@ -8,7 +8,6 @@
 
 .points {
   text-align: center;
-  background-color: red;
   height: 50%;
 }
 
@@ -19,7 +18,26 @@
 }
 
 .awards {
+  padding-top: 5%;
   text-align: center;
-  background-color: green;
   height: 100%;
+}
+
+.point-num {
+  color: black;
+  position: relative;
+  top: 10%;
+}
+
+.award {
+  border-bottom: thin solid black;
+  height: 20%;
+}
+
+h1 {
+  font-size: 110px;
+}
+
+h3 {
+  font-size: 40px;
 }
