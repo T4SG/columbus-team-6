@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-
-
-	resources 'chat'
-
+  root 'login#index'
+  resources 'chat'
   resources 'calendar'
 
 	resources 'points_locker'
@@ -10,10 +8,6 @@ Rails.application.routes.draw do
 	resources "reporting"
 
 	resources "admin"
-
-
-
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.

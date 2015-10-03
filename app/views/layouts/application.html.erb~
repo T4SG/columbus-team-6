@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -25,16 +26,16 @@
             <li class="active"><%= link_to "Chat", chat_index_path %></li>
         
 	    <li><%= link_to "Calendar", calendar_index_path  %></li>
-	    <li><%= link_to "Points_locker", points_locker_index_path %></li>		
+	    <li><%= link_to "Points Locker", points_locker_index_path %></li>		
             
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 <div class ="container">
+=======
+>>>>>>> a4e189b5196509901b7a385206d7ec6088d2b382
 <%= yield %>
-</div>
-
 
 </body>
 </html>

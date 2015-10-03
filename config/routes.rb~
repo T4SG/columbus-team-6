@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
-
-
-	resources 'chat'
-
+  root 'login#index'
+  resources 'chat'
   resources 'calendar'
+<<<<<<< HEAD
 
 	resources 'points_locker'
 
 	resources "reporting"
 
+	resources "admin"
 
 
 
 
+
+=======
+  resources 'points_locker'
+>>>>>>> a4e189b5196509901b7a385206d7ec6088d2b382
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
