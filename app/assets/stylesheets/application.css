@@ -19,12 +19,12 @@ body {
 }
  
 .navbar {
-    background-color: #056839;
+    background-color: #fcb040;
     border-color: #3e3e3e;
 }
 
 .navbar .navbar-brand {
-    color: #fcb040;
+    color: #056839;
 }
 .navbar .navbar-brand:hover,
 .navbar.navbar-brand:focus {
