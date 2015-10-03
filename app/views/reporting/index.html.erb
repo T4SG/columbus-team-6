@@ -1,4 +1,85 @@
 <%= render 'layouts/navbar' %>
 
 <div class="container">
+	<form id="selfReport" method="post" onsubmit="alert('Thank you for updating us!')">
+		<fieldset id="Update LJFF">
+			<legend>What did you do today?</legend>
+			
+			<article id="eventNameList">
+				<label name="eventNames">
+					Event:
+				</label>
+				<select form="selfReport" required>
+					<option value="LJFF Robo Calls">LJFF Robo Calls</option>
+					<option value="LeBron Robo Calls">LeBron Robo Calls</option>
+					<option value="WFE Earned Incentives">WFE Earned Incentives</option>
+					<option value="AIPN Earned Incentives">AIPN Earned Incentives</option>
+					<option value="Special Letter From LeBron">Special Letter From LeBron</option>
+					<option value="Hometown Hall Meeting">Hometown Hall Meeting</option>
+					<option value="Community Service Day">Community Service Day</option>
+					<option value="I PROMISE Family Reunion at Cedar Point">I PROMISE Family Reunion at Cedar Point</option>
+					<option value="I PROMISE Experience Outings">I PROMISE Experience Outings</option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value="PROMISE Pass">Promise Pass</option>
+					<option value="LeBron Advisory Board">LeBron Advisory Board</option>
+					<option value="Special Event">Special Event</option>
+					
+				</select>
+			</article>
+
+			<article id="workDescription">
+				<aside id="descBox" class="reset">
+					<label name="Description">
+						Work Description:
+					</label>
+				</aside>
+				<aside id="dateBox">
+					<label name="Date">
+						Date Created:
+					</label>
+					<input id="date" type="text" name="Date" placeholder="mm/dd/yyyy" required>
+				</aside>
+				<textarea name="Description" form="workOrder" rows="15" cols="30" placeholder="Explain work to be done..." class="reset" required></textarea>
+			</article>
+			
+
+		</fieldset>
+
+		<fieldset id="locationField">
+			<legend> Location Information </legend>
+			
+			<label>Current Location</label>
+			<input id="geoLocateBtn" type="button" value="Get My Location" onclick="getGeoLocation(document.getElementById('displayLat'), document.getElementById('geoLocationLat'), document.getElementById('displayLong'), document.getElementById('geoLocationLong'), document.getElementById('displayAlt'), document.getElementById('geoLocationAlt'))" formnovalidate>
+			<label name="latitude">
+				Latitude:
+			</label>
+			<label id="displayLat" name="displayLat" class="resetHTML"></label>
+			<input id="geoLocationLat" name="Latitude" type="hidden" required>
+			<label name="longitude">
+				Longitude:
+			</label>
+			<label id="displayLong" name="displayLong" class="resetHTML"></label>
+			<input id="geoLocationLong" name="Longitude" type="hidden" required>
+			<label name="altitude">
+				Altitude:
+			</label>
+			<label id="displayAlt" name="displayAlt" class="resetHTML"></label>
+			<input id="geoLocationAlt" name="Altitude" type="hidden" required>
+		</fieldset>
+		<article id="submitBox">
+			<input id="submitBtn" type="submit" value="Submit Work Order">
+		</article>
+	</form>
 </div>
