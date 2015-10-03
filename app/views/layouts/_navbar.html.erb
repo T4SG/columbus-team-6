@@ -1,4 +1,9 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= image_tag("LJFF-logo.png", :alt => "The Lebron James Family Foundation", style: "position:absolute; top: 20px; left: 25px; z-index: 2;") %>
+    </div>
+  </div>
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -12,9 +17,9 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><%= link_to "Calendar", calendar_index_path %></li>
-        <li><%= link_to "Chat", chat_index_path %></li>	
+        <li><%= link_to "Chat", chat_index_path %></li>
 		<li><%= link_to "Points Locker", points_locker_index_path %></li>
-		<li><%= link_to "Reporting", points_locker_index_path %></li>		            	 
+		<li><%= link_to "Reporting", points_locker_index_path %></li>
       </ul>
     </div>
   </div>
