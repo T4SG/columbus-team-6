@@ -7,7 +7,126 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="header">
+ 
+  <div class="header-inner"> 
+    <div class="logo"> 
+      <a href="/">
+        <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/LJFF-logo.png" width="208" height="208" alt="LeBron James Family Foundation" />
+      </a> 				
+	</div><!-- end logo -->
+   </div><!-- end header-inner -->
+  	
+   
+   
+<!------------------ top yellow nav bar ----------------->   
+    <div class="topnav">    	
+      <div class="header-inner">        	
+            <ul id="navigation">	
+              <li><a class="active-nav" href="/">Home</a></li>
+              <li><a class="active-nav" href="/page/partners">Partners</a></li>
+              <li><a class="active-nav" href="/page/donate">Donate</a></li>
+              <li><a class="active-nav" href="/post/search">News</a></li>				
+          </ul><!-- end navigation -->
+          
+        
+        
+      <!------------- social media links ----------------->   
+         <div id="header-socialmedia">
+          		<ul class="social-icons fixclear">
+                  <li class="social-facebook"><a href=".inline_facebook" class="inline">Facebook</a></li>                      
+                  <li class="social-twitter"><a href=".inline_twitter" class="inline">Twitter</a></li>                      
+				</ul>
+          </div>
+        
+        <!-- This contains the hidden content for inline calls -->
+		<div style='display:none'>
+          <div class='inline_facebook' style='padding:20px; background:#fff;'>
+              <h1>Facebook Redirect</h1>
+              <p>You are about to leave lebronjamesfamilyfoundation.org and be redirected to our Facebook page.<br /><br />Is this what you want to do?</p>
+              <br />
+              <a class="buttonmodal" target="blank" href="http://www.facebook.com/lebronjamesfamilyfoundation">Yes, Take Me There!</a>
+              <a class="close-reveal-modal" onclick='parent.$.colorbox.close(); return false;'>No Thanks, I Will Hang Out A While Longer</a>
+          </div>
+    	</div>
+        
+        <!-- This contains the hidden content for inline calls -->
+		<div style='display:none'>
+          <div class='inline_twitter' style='padding:20px; background:#fff;'>
+            <h1>Twitter Redirect</h1>
+     		<p>You are about to leave lebronjamesfamilyfoundation.org and be redirected to our Twitter page.<br /><br />Is this what you want to do?</p>
+          	<br />
+          	<a class="buttonmodal" target="blank" href="https://twitter.com/LJFamFoundation">Yes, Take Me There!</a>
+       		<a class="close-reveal-modal" onclick='parent.$.colorbox.close(); return false;'>No Thanks, I Will Hang Out A While Longer</a>
+          </div>
+    	</div>
+          
+      <!------------- end social media links -----------------> 
+                 
+        
+          <div id="search">
+            <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/joinus.png" width="80" height="15" alt="Join Us" />
+            <!--<img src="/images/searchicon.jpg" width="26" height="26" alt="Search" /> -->
+          </div>
+                             
+        <div class="clear"></div>
+      </div><!-- end header-inner -->    
+    </div><!-- end .topnav -->
 
+   
+   
+   
+<!------------------ bottom gray nav bar - initiative logos ----------------->     
+    <div class="bottomnav">
+    	<div class="header-inner">         
+                
+          <ul id="nav-initiatives">                
+            <li>
+              <a href="/page/wheelsforeducation" class="nav-wheels">Wheels for Education</a>
+            </li>
+            <li>
+              <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/nav-divider.jpg" width="1" height="88" />
+            </li>
+            <li>
+              <a href="/page/akronipromise" class="nav-promisenetwork">Akron I Promise Network</a>
+            </li>
+            <li>
+              <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/nav-divider.jpg" width="1" height="88" />
+            </li>
+            <li>
+              <a href="/page/lab" class="nav-lab">The LeBron Advisory Board</a>
+            </li>
+            <li>
+              <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/nav-divider.jpg" width="1" height="88" />
+            </li>
+            <li>
+              <a href="/page/bgclubs" class="nav-boysandgirls">Boys &amp; Girls Club</a>
+            </li>
+            <li>
+              <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/nav-divider.jpg" width="1" height="88" />
+            </li>
+            <li>
+              <a href="/page/stvincent-stmary-hs" class="nav-school">St.Vincent - St.Mary High School</a>
+            </li>
+            <li>
+              <img src="http://lebronjamesfoundation.blob.core.windows.net/resource/Image/nav-divider.jpg" width="1" height="88" />
+            </li>
+            <li>
+              <a href="https://www.lebronjames.com/product/search" target="_blank" class="nav-ipromise">Time to Promise</a>
+            </li>                            
+          </ul>
+          
+           <div class="clear"></div>  
+    	</div><!-- end header-inner -->      
+   </div><!-- end .bottomnav -->
+
+   
+   
+  
+<!------------------ transparent bottom row ----------------->     
+    <div class="transparentbar"></div>
+   
+</div><!-- end .header -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
