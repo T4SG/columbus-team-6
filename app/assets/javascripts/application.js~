@@ -14,7 +14,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= require turbolinks
 //= require moment
 
 //= require fullcalendar
@@ -23,6 +23,6 @@
 
 //= require chat
 //= requre private_pub
-//= require turbolinks
+
 //= require_tree . 
 

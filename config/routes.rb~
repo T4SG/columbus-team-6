@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root 'login#index'
   resources 'chat'
   resources 'calendar'
-<<<<<<< HEAD
 
 	resources 'points_locker'
 
@@ -10,13 +9,21 @@ Rails.application.routes.draw do
 
 	resources "admin"
 
+devise_for :users
 
+  authenticated :user do
+    root 'users#index'
+  end
 
+  unauthenticated :user do
+    devise_scope :user do
+      get "/" => "devise/sessions#new"
+    end
+  end
 
-
-=======
-  resources 'points_locker'
->>>>>>> a4e189b5196509901b7a385206d7ec6088d2b382
+  resources :conversations do
+    resources :messages
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

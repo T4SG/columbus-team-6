@@ -5,6 +5,60 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+span{text-decoration:none; font-size: 50pt; color:#36c;}
+//-->
+/*]]>*/
+</style>
 
+<script type="text/javascript">
+//<![CDATA[
+function _score(){
+var x = 0;
+var y = '';
+var tens = document.createElement('span');
+tens.appendChild(document.createTextNode('0'));
+var ones = tens.cloneNode(true);
+tens.onclick = function() {
+	--x;
+	y = x.toString();
+	if (y < 10)y = "0"+ y;
+	tens.innerHTML = y.substr(0,1);
+	ones.innerHTML = y.substr(1);
+	}
+ones.onclick = function(){
+	++x;
+	y = x.toString();
+	if (y < 10) y = "0"+ y;
+	tens.innerHTML = y.substr(0,1);
+	ones.innerHTML = y.substr(1);
+	}
+var score = document.createElement('span');
+score.appendChild(tens); score.appendChild(ones);
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-POINTS_LOCKERRRRR
+<h4>Take a Picture</h4>
+<form id="form1" name="form1" enctype="multipart/form-data">
+       <input type="file" id="file1"  name="file1" accept="image/*" capture="camera">
+       <input type="file" id="file2"  name="file2" accept="image/*" capture="camera">
+       <input type="button" value="Save" onclick="sendFile();" />
+</form>
