@@ -2,12 +2,26 @@
 <html>
 <head>
   <title>ColumbusTeam6</title>
+  <style>
+  img{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+  }
+  </style>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
+<%= image_tag("LJFF-logo.png", :alt => "The Lebron James Family Foundation") %>
+
+
+  
+  </head>
 <body>
 
+
+  
 <%= yield %>
 
 </body>
