@@ -61,7 +61,6 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
-<<<<<<< HEAD
     faye (1.1.2)
       cookiejar (>= 0.3.0)
       em-http-request (>= 0.3.0)
@@ -73,8 +72,6 @@ GEM
     faye-websocket (0.10.0)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
-=======
->>>>>>> 9a20e3c6023098466c3e0c6d0d737bec8ab2716b
     fullcalendar-rails (2.3.1.0)
       jquery-rails (>= 3.1.1, < 5.0.0)
       momentjs-rails (~> 2.8, >= 2.8.4)
@@ -190,14 +187,10 @@ DEPENDENCIES
   fullcalendar-rails
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
-  momentjs-rails
-  private_pub
-=======
   jquery-rest-rails
   jquery-ui-rails
   momentjs-rails
->>>>>>> 9a20e3c6023098466c3e0c6d0d737bec8ab2716b
+  private_pub
   rails (= 4.2.3)
   responders (~> 2.0)
   sass-rails (~> 5.0)
