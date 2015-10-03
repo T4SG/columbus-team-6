@@ -1,3 +1,25 @@
 // Place all the styles related to the points_locker controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.row, .whole-column {
+  height: 100%;
+}
+
+.points {
+  text-align: center;
+  background-color: red;
+  height: 50%;
+}
+
+.upload {
+  text-align: center;
+  background-color: blue;
+  height: 50%;
+}
+
+.awards {
+  text-align: center;
+  background-color: green;
+  height: 100%;
+}
