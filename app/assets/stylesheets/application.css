@@ -10,45 +10,51 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+
+
  *= require_tree .
+ *= require fullcalendar
  *= require_self
+
  */
+
+html, .container {
+  height: 100%;
+}
 
 body {
 	padding-top: 70px;
+  height: 100%;
+  margin: auto;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #E9E9E9;
+    margin: 0;
+    color: #7C7C7C;
+    font-weight: normal;
+    font-style: normal;
+    min-width: 1190px;
 }
 
-/* 
-.navbar {
-    background-color: #fcb040;
-    border-color: #3e3e3e;
-
+.styleImage {
+	position:absolute;
+	top: 20px;
+	right: 50px;
+	z-index: 2;
 }
-
-.navbar .navbar-brand {
-    color: #056839;
-}
-.navbar .navbar-brand:hover,
-.navbar.navbar-brand:focus {
-    color: #3e3e3e;
-}
-*/
-
-
-
-
-
-
 
 .navbar {
   background-color: #fcb040;
   border-color: #fcb040;
 }
+
 .navbar .navbar-brand {
-  color: #ac6907;
+  color: #ffffff;
+  font-weight: bold;
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
-  color: #666666;
+  color: #056839;
+  
 }
 .navbar .navbar-text {
   color: #ac6907;
@@ -97,4 +103,8 @@ body {
   .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #666666;
     background-color: #fcb040;
+  }
+  
+  .styleImage {
+	visibility: hidden;
   }

@@ -1,7 +1,9 @@
 class PointsLockerController < ApplicationController
+  def index
+  end
 
-def index
+  def publish
+    puts "In publish!!!!!!!!!!!!!"
 
-end
-
+  end
 end

@@ -1,1 +1,12 @@
 <%= render 'layouts/navbar' %>
+
+
+<h3>All Reports</h1>
+
+<% @reports.each do |report| %>
+  <%= report.topic %> <%= report.description %>
+  <br />
+<% end %>
+
+  <br />
+<%= link_to "Create New Report", new_reporting_path, class: ['btn', 'btn-success'] %>

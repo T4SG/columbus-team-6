@@ -12,6 +12,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
 
@@ -24,5 +25,15 @@
 //= require chat
 //= requre private_pub
 //= require turbolinks
+<<<<<<< HEAD
 //= require_tree . 
 
+=======
+
+//= require jquery-ui
+//= require jquery.rest
+
+//= require moment
+//= require fullcalendar
+//= require_tree .
+>>>>>>> 9a20e3c6023098466c3e0c6d0d737bec8ab2716b

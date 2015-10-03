@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20151003123333) do
 
   create_table "conversations", force: :cascade do |t|
@@ -30,6 +31,15 @@ ActiveRecord::Schema.define(version: 20151003123333) do
 
   add_index "messages", ["conversation_id"], name: "index_messages_on_conversation_id"
   add_index "messages", ["user_id"], name: "index_messages_on_user_id"
+=======
+ActiveRecord::Schema.define(version: 20151003103735) do
+
+  create_table "reports", force: :cascade do |t|
+    t.string "topic"
+    t.text   "description"
+    t.date   "date_created"
+  end
+>>>>>>> 9a20e3c6023098466c3e0c6d0d737bec8ab2716b
 
   create_table "users", force: :cascade do |t|
     t.string "name"
