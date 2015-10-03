@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
+
 	resource 'chat'
+
+  resource 'calendar'
+
+
 
 
 
