@@ -14,7 +14,7 @@ while true; do
   git pull origin master
   git push origin master
 
-  sleep 5
+  sleep 60
   wait
 
 done
