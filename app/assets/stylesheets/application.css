@@ -26,6 +26,10 @@ body {
     min-width: 1190px;
 }
 
+.container {
+  background-color: #FFFFFF;
+}
+
 .navbar {
   background-color: #fcb040;
   border-color: #fcb040;
