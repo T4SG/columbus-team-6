@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
 
-	resource 'chat'
+	resources 'chat'
 
-  resource 'calendar'
+  resources 'calendar'
 
 
 
