@@ -49,10 +49,12 @@ body {
 }
 
 .navbar .navbar-brand {
-  color: #ac6907;
+  color: #ffffff;
+  font-weight: bold;
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
-  color: #666666;
+  color: #056839;
+  
 }
 .navbar .navbar-text {
   color: #ac6907;
