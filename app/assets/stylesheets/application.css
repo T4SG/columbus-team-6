@@ -36,6 +36,13 @@ body {
     min-width: 1190px;
 }
 
+.styleImage {
+	position:absolute;
+	top: 20px;
+	right: 50px;
+	z-index: 2;
+}
+
 .navbar {
   background-color: #fcb040;
   border-color: #fcb040;
@@ -94,4 +101,8 @@ body {
   .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #666666;
     background-color: #fcb040;
+  }
+  
+  .styleImage {
+	visibility: hidden;
   }
