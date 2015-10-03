@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
   root 'login#index'
   resources 'chat'
-  resources 'calendar'
+  resources 'calendar' do
+    get '/events' => 'calendar#events'
+  end
 
-	resources 'points_locker'
+	resources 'points_locker' do
+    get '/publish' => "points_locker#publish"
+  end
 
 	resources "reporting"
 
